@@ -1,8 +1,11 @@
 module.exports =
   pkg:
     name: 'pie-bubble', version: '0.0.1'
-    extend: {name: "@makechart/base"}
-    dependencies: []
+    # 仍需完整 d3: 明確指定 d3 版 base ( base 的 index.html 之後會改成 lite )
+    extend: {name: "@makechart/base", path: "d3/index.html"}
+    dependencies: [
+    * name: \d3-force-boundary, path: "dist/d3-force-boundary.min.js"
+    ]
   init: ({root, context, pubsub}) ->
     pubsub.fire \init, mod: mod {context} .then ~> it.0
 
