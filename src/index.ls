@@ -38,6 +38,9 @@ mod = ({context}) ->
     color:
       left: type: \color, default: \#222, desc: {en: "color of the left field's share in each bubble; bubbles with more of it sit further left", "zh-TW": "每顆泡泡裡 left 欄位所佔部分的顏色；比例越高的泡泡越靠左"}
       right: type: \color, default: \#b1003b, desc: {en: "color of the right field's share in each bubble; bubbles with more of it sit further right", "zh-TW": "每顆泡泡裡 right 欄位所佔部分的顏色；比例越高的泡泡越靠右"}
+  # 段落 ( tab ) 的說明, key 是段落的路徑. preset 的段落由 chart.utils.config.tabinfo 掛上來, 共用的 common 由核心補
+  tabinfo:
+    color: desc: {en: "colors of the two shares in each bubble, for the left and right fields", "zh-TW": "每顆泡泡裡兩個部分的顏色，分別對應 left 與 right 欄位"}
   dimension:
     name: {type: \N, name: "name"}
     left: {type: \R, name: "size in left"}
