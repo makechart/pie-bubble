@@ -36,8 +36,8 @@ mod = ({context}) ->
       right: {key: \val2, name: \Right}
   config: {} <<< chart.utils.config.preset.default <<<
     color:
-      left: type: \color, default: \#222
-      right: type: \color, default: \#b1003b
+      left: type: \color, default: \#222, desc: {en: "color of the left field's share in each bubble; bubbles with more of it sit further left", "zh-TW": "每顆泡泡裡 left 欄位所佔部分的顏色；比例越高的泡泡越靠左"}
+      right: type: \color, default: \#b1003b, desc: {en: "color of the right field's share in each bubble; bubbles with more of it sit further right", "zh-TW": "每顆泡泡裡 right 欄位所佔部分的顏色；比例越高的泡泡越靠右"}
   dimension:
     name: {type: \N, name: "name"}
     left: {type: \R, name: "size in left"}
